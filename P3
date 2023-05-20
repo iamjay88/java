@@ -1,0 +1,25 @@
+/*Write a program that reads a number in meters, converts it to feet, and displays the result.*/
+import java.util.Scanner;
+public class Convert{
+    public static void main(String[] args){
+        System.out.println("~Welcome to converter~");
+        System.out.println("~It Converts Meter Into Feet~");
+        while(true){
+            System.out.println("1.Start 2.Stop");
+            Scanner sc= new Scanner(System.in);
+            int option = sc.nextInt();
+            if(option==1){
+              System.out.println("Enter Number in Meter:");
+              double meter= sc.nextDouble();
+              double feet = (double)(meter*3.28084);
+              System.out.println(+meter+" METER IN FEET IS "+feet);   
+            }
+            else if(option==2){
+                System.exit(0);
+            }
+            else
+            System.out.println("INVALID SELECTION");
+        }
+       
+    }
+}
