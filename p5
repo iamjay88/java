@@ -1,0 +1,39 @@
+//Write a program that prompts the user to enter three integers and display the maximum number among these numbers.
+import java.util.Scanner;
+public class Maximun{
+    public static void main(String[] args){
+        System.out.println("Program to get maximum of three numbers...!");
+        Scanner sc = new Scanner(System.in);
+        while(true){
+            System.out.println("1.Start 2.Stop");
+            int option=sc.nextInt();
+            if(option==1){
+            System.out.println("Enter Three Numbers:");
+            System.out.println("NUMBER 1:");
+            int n1= sc.nextInt();
+            System.out.println("NUMBER 2:");
+            int n2= sc.nextInt();
+            System.out.println("NUMBER 3:");
+            int n3= sc.nextInt();
+            System.out.println("----ENTERED NUMBERS----");
+            System.out.println("NUMBER 1:"+n1+"\tNUMBER 2:"+n2+"\tNUMBER 3:"+n3);
+            if(n1>n2 && n1>n3){
+                System.out.println(+n1+" Is Maximum of all Three ");
+            }
+            else if(n2>n1&&n2>n3){
+                System.out.println(+n2+" Is Maximum of all Three ");
+            }
+            else{
+                System.out.println(+n3+" Is Maximum of all Three ");
+            }
+            }
+            else if(option==2){
+                System.out.println("Good byee..!");
+                System.exit(0);
+            }
+            else{
+                System.out.println("INVALID SELECTION");
+            }
+        }
+    }
+}
